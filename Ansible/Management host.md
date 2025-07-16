@@ -14,7 +14,7 @@ actions:
     str: "next 7 days"
 ```
 
-# Management host
+# Ansible management host
 
 ```bash
 dnf install -y ansible-core sshpass

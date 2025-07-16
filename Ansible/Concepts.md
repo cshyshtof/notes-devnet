@@ -14,7 +14,7 @@ actions:
     str: "next 7 days"
 ```
 
-# Concepts
+# Ansible concepts
 
 - Concepts
 	- Ansible generates python scripts which are executed on remote host
