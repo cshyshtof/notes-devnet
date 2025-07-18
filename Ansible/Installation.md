@@ -16,22 +16,42 @@ actions:
 
 # Ansible installation
 
-- Centos installation
+## Install on Centos
 
 ```shell
 dnf install -y epel-release
 dnf install -y ansible
 ```
 
-- Installation using pip
+## Install using pip
+
+- Install the core ansible and some builtin collections
 
 ```shell
 python -m venv venv
 source venv/bin/activate
-pip install ansible=2.9
+pip install ansible=11.4.0
 ```
 
-- Useful tools
+- You can also install only the core, without any collections:
+
+```shell
+pip install ansible-core
+```
+
+## Install collections
+
+- `cisco.aci.aci_bd`:
+	- `cisco` - namespace
+	- `aci` - collection
+	- `aci_bd` - module
+
+```bash
+ansible-galaxy collection install cisco.aci
+ansible-galaxy collection list
+```
+
+## Useful tools
 
 ```shell
 pip install yamllint
