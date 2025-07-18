@@ -24,6 +24,7 @@ actions:
 	- Use consistent names, tags, spaces, roles, directory structure
 	- Add role prefix to variables used in that role
 	- Add `vault_` prefix for variables stored in a vault
+	- Always use full qualified name collection name in tasks, even for core modules
 - Playbook
 	- Do not combine tasks and variables
 	- Divide tasks into smaller parts rather than using conditionals
