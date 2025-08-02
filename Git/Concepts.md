@@ -47,6 +47,9 @@ actions:
 	- You can checkout such commit, but just to review, avoid doing commits
 	- Changes are not shown in a log, and are hard to recover
 	- Garbage collection will remove such phantom checkout
+- GitOps
+	- Everything as Code
+	- Using Git to manage configuration of networks, servers, security, etc.
 - Basic operations
 
 ```text
