@@ -20,6 +20,9 @@ actions:
 	- Ansible generates python scripts which are executed on remote host
 	- First, a setup module is run (`gather_facts)`
 	- Multiple `*_facts` are used, depending on remote OS
+	- Ansible mutates the infrastructure
+	- Usually running a playbook re-runs everything
+	- You may need to create advanced controls to avoid long running scripts
 - Commands
 	- `ansible`
 		- Run an ad-hoc single task
