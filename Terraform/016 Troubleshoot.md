@@ -17,6 +17,8 @@ actions:
 # Troubleshoot
 
 - State drift
+	- Recreate
+		- `terraform tain <resource>`: mark for replacement with next apply
 	- Replace
 		- `terraform {plan | apply} -replace="resource"`
 	- Import

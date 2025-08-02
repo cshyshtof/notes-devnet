@@ -37,6 +37,8 @@ EOT
 - Function calls
 	- Terraform has lots of builtin functions
 	- Numeric, string, collection, encoding, file, date/time, hash, IP, conversion
+- Lookup
+	- `lookup(map, variable, default_value)`
 - Conditionals
 	- Ternary: `condition ? true : false`
 - For

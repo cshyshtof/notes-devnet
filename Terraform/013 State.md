@@ -27,13 +27,14 @@ actions:
 - Commands
 	- `terraform state list`: list locally stored resources
 	- `terraform state show <resource_address>`
+	- Manually refactoring the state should be done with caution
 	- `terraform state mv <src name> <dst name>`
 		- Mainly used to rename existing resources
 		- Move a resource into a module and vice versa
 		- Does not re-create any physical resources
-	- `terraform state pull` - pull current state and output to stdout
-	- `terraform state push` - update remote state with local state
-	- `terraform state replace-provider` - replace provider in the state
-	- `terraform state rm` - remove instances from the state
+	- `terraform state pull`: pull current state and output to stdout
+	- `terraform state push`: update remote state with local state
+	- `terraform state replace-provider`: replace provider in the state
+	- `terraform state rm`: remove instances from the state
 
 
