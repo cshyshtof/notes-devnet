@@ -59,6 +59,13 @@ resource "null_resource" "example" {
       "./bootstrap.py"
     ]
   }
+
+  connection {
+    type = "ssh"
+    user = "root"
+    password = "${var.root_password}"
+    host = "${var.host}"
+  }
 }
 ```
 
@@ -72,25 +79,6 @@ resource "null_resource" "example" {
   provisioner "file" {
 	source = "hosts"
 	destination = "/etc/hosts"
-  }
-}
-```
-
-- Connection
-	- Tells the provisioner how to connect
-
-```hcl
-resource "null_resource" "example" {
-  provisioner "file" {
-	source = "hosts"
-	destination = "/etc/hosts"
-  }
-
-  connection {
-    type = "ssh"
-    user = "root"
-    password = "${var.root_password}"
-    host = "${var.host}"
   }
 }
 ```
